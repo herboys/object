@@ -1,0 +1,9 @@
+export const UID = state => state.UID;
+export const CRFTEMPLATEEDITEMS = state => state.CRFTEMPLATEEDITEMS;
+export const CRFTEMPLATELEFTCHILDRENITEM = state => state.CRFTEMPLATELEFTCHILDRENITEM;
+export const TEMPALTETYPES = state => state.TEMPALTETYPES;
+export const CTFTEMPLATECHILDFROM = state => state.CTFTEMPLATECHILDFROM;
+export const TEMPLATELIST = state => state.TEMPLATELIST;
+export const LOOKFROM = state => state.LOOKFROM;
+export const TEMPLATE_USER_ID = state => state.TEMPLATE_USER_ID;
+export const ROUTERTYPE = state => state.ROUTERTYPE;

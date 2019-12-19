@@ -1,0 +1,58 @@
+@import "config";
+
+@function pxToRem($px){
+  @return $px / $baseHtmlSize * 1rem;
+}
+
+@mixin absolute-vertical($heightPX){
+  position: absolute;
+  top:50%;
+  height: pxToRem($heightPX);
+  margin-top:- ( pxToRem($heightPX / 2) ) ;
+}
+@mixin absolute-horizontal($widthPX){
+  position: absolute;
+  left:50%;
+  width: pxToRem($widthPX);
+  margin-left:- ( pxToRem($widthPX / 2) ) ;
+}
+
+
+@mixin text-ellipsis-l{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin text-ellipsis-m($number){
+  overflow : hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $number;
+  -webkit-box-orient: vertical;
+}
+
+@mixin appearance{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+
+@mixin encoded-svg-background($svg) {
+
+}
+
+@mixin max-screen-size($res){
+  @media only screen and ( max-width: $res ){
+    html{
+      font-size:($res / $baseViewSize ) * $baseHtmlSize;
+    }
+  }
+}
+@mixin max-screen($res){
+  @media only screen and ( max-width: $res ) {
+    font-size:$res/$baseViewSize* 1rem;
+    @content
+  }
+}
+

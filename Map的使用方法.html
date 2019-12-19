@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map的使用方法</title>
+</head>
+<body>
+<script>
+    let para = new Map()
+    console.log(para)
+    let list = [{name: '张三'}, {name: '李四'}]
+    para.set(list, 'content')
+    console.log(para.get(list))
+    console.log("用对象当作key")
+    console.log('------object.values------')
+    let object = {a: 1, b: 2, c: 3}
+    const newobject = Object.values(object)
+    console.log(newobject)
+</script>
+</body>
+</html>

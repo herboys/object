@@ -1,0 +1,1293 @@
+html,
+body {
+    height: 100%;
+    background-color: #e0e2e4
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.item-box {
+    margin-bottom: 15px;
+}
+
+.page-content {
+    border-top: 2px solid #77b0ec;
+}
+
+.page-echart {
+    border-top: 2px solid #77b0ec;
+}
+
+.page-echart .chart-wrap {
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: 15px;
+}
+
+.planer-box {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 16px;
+    min-height: 264px;
+    background: #fff;
+    border: 1px solid #e5e6e6;
+    /*  box-shadow: 1px 1px 6px rgba(100,100,100,.2);*/
+}
+
+.planer-box .planer-header {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 10px 10px 0 10px;
+    color: #333;
+}
+
+.planer-box .planer-header .line {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 14px;
+    background: #327dcf;
+    margin-right: 8px;
+    margin-top: -3px;
+}
+
+.planer-box .planer-content {
+    padding: 0 10px;
+}
+
+.planer-box .planer-content.pt {
+    padding-top: 10px;
+}
+
+.planer-box .chart-box {
+    /*background: #f1f1f1;*/
+    height: 224px;
+}
+
+
+/*header*/
+
+.header-box {
+    background: url("../../images/crf-images/images/header-bg.png") no-repeat;
+    background-size: 100% 100%;
+    height: 66px;
+}
+
+.header-box .name {
+    float: left;
+    margin: 10px 0 0 15px;
+}
+
+.header-box .name .logo {
+    float: left;
+    width: 270px;
+    height: 46px;
+    background: url("../../images/crf-images/images/logo.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.header-box .name .span-text {
+    float: left;
+    display: inline;
+    width: 300px;
+    margin-left: 10px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+
+.header-box .right-tool {
+    float: right;
+    padding-top: 19px;
+    color: #333333;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.header-box .right-tool a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.icon-top-user,
+.icon-top-quite,
+.icon-top-password {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    margin-top: -3px;
+}
+
+.icon-top-user {
+    background: url("../../images/crf-images/images/icon-user.png") no-repeat center;
+}
+
+.icon-top-quite {
+    background: url("../../images/crf-images/images/icon-top-quite.png") no-repeat;
+}
+
+.icon-top-password {
+    background: url("../../images/crf-images/images/icon-top-password.png") no-repeat;
+}
+
+.nav-top {
+    position: relative;
+    padding: 5px 20px;
+    height: 38px;
+    z-index: 10;
+}
+
+.nav-top .left-tool {
+    float: left;
+    height: 38px;
+    line-height: 38px;
+}
+
+.nav-top .icon-home {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    margin-top: -5px;
+    background: url("../../images/crf-images/images/icon-home.png") no-repeat;
+}
+
+.nav-top .check-text {
+    position: relative;
+    font-size: 18px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.nav-top .check-text .tool-tip {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+    width: 568px;
+    border: 1px solid #c9ccd6;
+    background: #fff url("../../images/crf-images/images/tool-tip-bg.png") no-repeat center bottom;
+    border-radius: 3px;
+}
+
+.nav-top .check-text:hover .tool-tip {
+    opacity: 1;
+    height: 172px;
+    overflow: initial;
+    transition: all 0.5s;
+}
+
+.nav-top .check-text .tool-tip .tool-tip-content {
+    padding: 15px 20px;
+}
+
+.nav-top .check-text .tool-tip .tool-tip-content>li {
+    font-size: 14px;
+    color: #333333;
+    /*height: 24px;*/
+    clear: both;
+    margin-bottom: 4px;
+}
+
+.nav-top .check-text .tool-tip .tool-tip-content>li .label-text {
+    float: left;
+    font-size: 14px;
+    color: #999999;
+    height: 22px;
+    line-height: 22px;
+}
+
+.nav-top .check-text .tool-tip .tool-tip-content>li .label-text .round {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #1ea15b;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+.nav-top .check-text .tool-tip .tool-tip-content>li .text-wrap {
+    overflow: hidden;
+    line-height: 22px;
+    color: #333333;
+}
+
+.nav-top .icon-arrow-down {
+    transition: all 0.5s;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    width: 12px;
+    height: 7px;
+    margin-top: -3px;
+    background: url("../../images/crf-images/images/icon-arrow-down.png") no-repeat;
+}
+
+.nav-top .check-text:hover .icon-arrow-down {
+    transform: rotate(-180deg);
+    transition: all 0.5s;
+}
+
+.nav-top .right-tool {
+    float: right;
+    line-height: 38px;
+}
+
+.nav-top .right-tool .span-text {
+    font-size: 14px;
+    color: #999999;
+    margin-right: 20px;
+}
+
+.nav-top .right-tool .save-btn {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background: #3b88d9;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.main {
+    position: absolute;
+    left: 0;
+    top: 116px;
+    right: 0;
+    bottom: 15px;
+}
+
+
+/* left start */
+
+
+/* ======================左侧===================== */
+
+.left-tool-nav {
+    position: relative;
+    margin: 10px;
+    height: 31px;
+    border: 1px solid #9ac4fd;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.left-tool-nav .search-input {
+    position: relative;
+    display: block;
+    height: 31px;
+    line-height: 31px;
+    border: 0;
+    padding-left: 40px;
+    background: #fcfdff;
+    z-index: 1;
+}
+
+.left-tool-nav .search-bar {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: url("../../images/crf-images/images/icon-search.png") no-repeat center;
+    z-index: 2;
+}
+
+.left-tool-nav .line {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -9px;
+    background: #96c2fd;
+    width: 1px;
+    height: 18px;
+    z-index: 2;
+}
+
+.left-tool-nav .right-tool {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 31px;
+    z-index: 2;
+    line-height: 31px;
+    padding: 0 6px;
+}
+
+.left-tool-nav .right-tool .line {
+    left: -1px;
+}
+
+.left-tool-nav .right-tool .icon-add {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    background: url("../../images/crf-images/images/icon-add-file.png") no-repeat;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.left-tool-nav .right-tool .icon-folder {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    background: url("../../images/crf-images/images/icon-floder.png") no-repeat;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.left-slider {
+    height: 100%;
+    float: left;
+    width: 260px;
+    background: #fff;
+    overflow: auto;
+    margin-left: 15px;
+}
+
+.nav-list {
+    border-top: 2px solid #77b0ec;
+}
+
+.nav-list>li .first-a {
+    display: block;
+    line-height: 26px;
+    padding: 7px 10px 7px 35px;
+    border-bottom: 2px solid #e1ebe5;
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+}
+
+.nav-list>li .first-a:hover {
+    text-decoration: none;
+}
+
+.nav-list>li.active .first-a {
+    background: url("../../images/crf-images/images/icon-green.png") 12px center no-repeat #fff;
+}
+
+.nav-list>li .sub-nav {
+    background: #f3f6f8;
+    border-bottom: 2px solid #e1ebe5;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.nav-list>li.active .sub-nav {
+    opacity: 1;
+    height: auto;
+}
+
+.nav-list>li .sub-nav>li>a {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #000000;
+    padding-left: 65px;
+    background: url("../../images/crf-images/images/tree-line-bg.png") 42px top repeat-y;
+}
+
+.nav-list>li .sub-nav>li>a .icon-tree-file {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -3px;
+    width: 16px;
+    height: 19px;
+    background: url("../../images/crf-images/images/icon-tree-file.png") no-repeat;
+}
+
+.nav-list>li .sub-nav>li>a:hover {
+    text-decoration: none;
+    color: #4a95e6;
+}
+
+.nav-list>li .sub-nav>li.active>a {
+    background: #e0e2e4 url("../../images/crf-images/images/tree-line-bg.png") 42px top repeat-y;
+}
+
+.nav-list>li .sub-nav>li:last-child>a {
+    background: url("../../images/crf-images/images/tree-line-bg-last.png") 42px top repeat-y;
+}
+
+.nav-list>li .sub-nav>li.active:last-child>a {
+    background: #e0e2e4 url("../../images/crf-images/images/tree-line-bg-last.png") 42px top repeat-y;
+}
+
+.slider-bar {
+    position: relative;
+    float: left;
+    width: 15px;
+    height: 100%;
+}
+
+.slider-bar span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -24px;
+    display: inline-block;
+    width: 10px;
+    height: 48px;
+    background: #000;
+    cursor: pointer;
+    background: url("../../images/crf-images/images/mini-left.png") no-repeat left;
+}
+
+.slider-bar span.active {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -24px;
+    display: inline-block;
+    width: 10px;
+    height: 48px;
+    background: #000;
+    cursor: pointer;
+    background: url("../../images/crf-images/images/mini-right.png") no-repeat left;
+}
+
+.right-main {
+    margin-right: 20px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-title {
+    padding-left: 15px;
+    border-bottom: 1px solid #c1cdd2;
+    color: #646464;
+    font-size: 14px;
+    height: 33px;
+    line-height: 33px;
+    margin-bottom: 15px;
+}
+
+.search-top-box {
+    background: #f7f9fb;
+    padding: 15px 15px 1px 15px;
+    margin-bottom: 20px;
+}
+
+.search-top-box .search-table {
+    width: 100%;
+    font-size: 14px;
+}
+
+.search-top-box .search-table td {
+    background: #f7f9fb;
+    padding: 10px 0;
+}
+
+.search-top-box .search-table td.td-text {
+    text-align: right;
+    width: 100px;
+    padding-right: 8px;
+}
+
+.search-top-box .ui-input-text {
+    width: 190px;
+}
+
+.search-top-box .ui-select-text {
+    width: 197px;
+}
+
+.my-style-title {
+    height: 40px;
+    line-height: 40px;
+    background: #f7f9fb;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+
+/*时间搜索条件*/
+
+.search-conditions-box {
+    min-width: 940px;
+    font-family: "Microsoft Yahei", "宋体", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 15px;
+}
+
+.search-conditions-box .left {
+    float: left;
+}
+
+.search-conditions-box .sure-btn {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.search-conditions-box .time-setting {
+    float: left;
+    display: inline-block;
+    height: 28px;
+    background: #0b67c6;
+    padding: 1px;
+}
+
+.search-conditions-box .time-setting a {
+    float: left;
+    display: inline-block;
+    height: 28px;
+    border-right: 1px solid #b3b3b3;
+    line-height: 28px;
+    color: #333333;
+    padding: 0 8px;
+    background: url("../../images/crf-images/images/date_seting_01.gif") repeat-x;
+}
+
+.search-conditions-box .time-setting a:hover {
+    text-decoration: none;
+}
+
+.search-conditions-box .time-setting a.active {
+    color: #fff;
+    border-right: 1px solid #458cea;
+    background: url("../../images/crf-images/images/date_seting_02.gif") repeat-x;
+}
+
+.search-conditions-box .time-box {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+}
+
+.search-conditions-box .time-box span {
+    padding: 0 5px;
+}
+
+.search-conditions-box .time-input-box {
+    float: left;
+    position: relative;
+    width: 150px;
+    height: 30px;
+}
+
+.search-conditions-box .time-input-box .ui-input-text {
+    width: 143px;
+}
+
+.search-conditions-box .time-input-box .date {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #0b67c6;
+}
+
+.search-conditions-box .sort-box {
+    float: left;
+    margin-left: 15px;
+}
+
+.search-conditions-box .spans {
+    margin-left: 10px;
+}
+
+.search-conditions-box .selects {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    *margin-top: 5px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", "宋体", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.search-conditions-box .sort-box label {
+    margin-left: 5px;
+}
+
+.search-conditions-box .sort-box label input {
+    margin-right: 5px;
+}
+
+.form-table .check-p .label-checkbox {
+    min-width: 120px;
+}
+
+.page-bdmb .content {
+    display: none;
+    position: relative;
+}
+
+.page-bdmb .content1 {
+    display: block;
+}
+
+.edit .c-name {
+    color: #000;
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+.edit .container {
+    padding-left: 24px;
+    padding-right: 24px;
+    overflow: hidden;
+}
+
+.edit .container .c-list {
+    margin-left: -61px;
+    margin-right: -61px;
+    position: relative;
+    padding-bottom: 23px;
+}
+
+.edit .container .left {
+    float: left;
+    width: 50%;
+}
+
+.edit .container .bor {
+    border: 1px solid #8abbef;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    padding-left: 26px;
+    padding-right: 18px;
+    height: 440px;
+}
+
+.edit .container .left .item {
+    margin-top: 40px;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #000000;
+}
+
+.edit .container .left .item1 {
+    margin-top: 20px;
+}
+
+.edit .container .left .item2 {
+    margin-top: 16px;
+}
+
+.edit .container .left .item3 {
+    margin-top: 62px;
+}
+
+.edit .container .left .item .title {
+    color: #4a94e7;
+    font-size: 14px;
+}
+
+.edit .container .left .btn {
+    display: inline-block;
+    width: 114px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background: url("../../images/crf-images/images/bdmb-03.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;
+    margin-right: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.edit .container .right {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.edit .container .right .name {
+    color: #000000;
+    font-size: 16px;
+    width: 100%;
+    /* font-weight: bold; */
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.edit .container .right p {
+    color: #000000;
+    font-size: 14px;
+}
+
+.edit .container .msg {
+    padding-top: 18px;
+}
+
+.edit .container .disease {
+    padding-top: 18px;
+}
+
+.edit .container .right .item {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #000;
+}
+
+.edit .container .right .item1 {
+    margin-top: 8px;
+}
+
+.edit .container .right .item2 {
+    margin-top: 8px;
+}
+
+.edit .container .right .item .title {
+    padding-bottom: 6px;
+}
+
+.edit .container .right .sex .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../../images/crf-images/images/icon-radio-bg-03.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: -6px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.edit .container .right .sex .icon2 {
+    margin-left: 10px;
+}
+
+.edit .container .right .sex .open {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../../images/crf-images/images/icon-radio-bg-04.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.edit .container .right .age-input {
+    border: 1px solid #d6d6d6;
+    width: 229px;
+    height: 28px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.edit .container .right .age-input input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 6px;
+    box-sizing: content-box;
+}
+
+.edit .container .right select {
+    width: 230px;
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    border-radius: 2px;
+}
+
+.edit .container .right .date-box {
+    width: 230px;
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.edit .container .right .date-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 6px;
+    box-sizing: content-box;
+}
+
+.edit .container .right .date-box .date {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+
+.edit .container li .itembg {
+    margin-left: 61px;
+    margin-right: 61px;
+}
+
+.edit .container .mid {
+    position: absolute;
+    left: 50%;
+    margin-left: -61px;
+    text-align: center;
+    width: 122px;
+}
+
+.edit .container .mid img {
+    width: 64px;
+    height: 64px;
+    margin-top: 166px;
+}
+
+.edit .container .mid .create {
+    width: 114px;
+    height: 34px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 14px;
+    background: url("../../images/crf-images/images/bdmb-02.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    letter-spacing: 2.6px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+.edit .tip {
+    position: absolute;
+    right: 20px;
+    bottom: 23px;
+    color: #000;
+    font-size: 12px;
+}
+
+
+/* 题库编辑 */
+
+.question-bank .container {
+    padding: 0;
+}
+
+.question-bank .container .left {
+    float: left;
+    width: 225px;
+}
+
+.question-bank .container .right {
+    margin-left: 225px;
+}
+
+.question-bank .container .left .itembg {
+    margin-left: 9px;
+    margin-top: 8px;
+    background: #f3f6f8;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.question-bank .container .left .title {
+    color: #4a95e6;
+    font-size: 14px;
+    padding-top: 16px;
+    padding-bottom: 6px;
+}
+
+.question-bank .container .left .title .icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../../images/crf-images/images/tkbj01.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: -2px;
+    margin-right: 4px;
+}
+
+.question-bank .container .left .title .icon2 {
+    background: url("../../images/crf-images/images/tkbj02.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.question-bank .container .left li {
+    border: 1px solid #d6d6d6;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    margin-top: 5px;
+    background: #fff;
+}
+
+.question-bank .container .right .itembg {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 6px;
+}
+
+.top-box .content_editable {
+    width: 100%;
+}
+
+.top-box .content_editable2 {
+    height: 60px;
+}
+
+.question-bank .container .right .top-box .name {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+.question-bank .container .right .top-box .q_title {
+    color: #000;
+    font-size: 14px;
+    /* margin-top: 26px; */
+}
+
+.part {
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    padding: 19px 25px 15px 37px;
+    margin-top: 13px;
+    color: #000;
+    font-size: 14px;
+    position: relative;
+}
+
+.part1 .option-list .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../../images/crf-images/images/icon-radio-bg-01.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: -5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.part1 .option-list .open {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../../images/crf-images/images/icon-radio-bg-02.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.part1 .option-list .content_editable {
+    position: relative;
+    width: 200px;
+}
+
+.part1 .option-list .content_editable .q_title {
+    padding-left: 35px;
+}
+
+.part1 .option-list .content_editable .icon {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.part1 .option-list .option {
+    display: inline-block;
+}
+
+.part .title {
+    padding-bottom: 12px;
+}
+
+.part1 .bot {
+    margin-top: 26px;
+    color: #4a95e6;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.part1 .bot img {
+    width: 18px;
+    height: 18px;
+    vertical-align: -4px;
+    margin-left: 7px;
+    margin-right: 2px;
+}
+
+.content_editable {
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: solid 1px transparent;
+    color: #484848;
+    height: 30px;
+    width: 70%;
+    display: inline-block;
+}
+
+.content_editable .q_title {
+    margin-top: 4px;
+    outline: none;
+    padding-left: 4px;
+}
+
+.content_editable:hover {
+    border: dashed 1px #aaaaaa;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.content_editable.editable_focus {
+    background-color: #f4f4f4;
+    border: solid 1px transparent;
+    padding: 0;
+}
+
+.content_editable.editable_focus .q_title {
+    outline: none;
+}
+
+.part4 .c-box .content_editable {
+    display: block;
+}
+
+.option .q_title {
+    padding-left: 36px;
+}
+
+.option {
+    display: block;
+}
+
+.option {
+    width: 570px;
+    border-radius: 4px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.option .left-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 6px;
+    top: 3px;
+    background: url("../../images/crf-images/images/icon-check-bg-03.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.option .right-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+.open-option .right-icon {
+    display: block;
+}
+
+.open-option .left-icon {
+    background: url("../../images/crf-images/images/icon-check-bg-04.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.part2 .bot {
+    margin-top: 26px;
+    color: #4a95e6;
+    font-size: 14px;
+}
+
+.part2 .bot img {
+    width: 18px;
+    height: 18px;
+    vertical-align: -4px;
+    margin-left: 7px;
+    margin-right: 2px;
+}
+
+.part .right-img1 {
+    position: absolute;
+    right: 55px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.part .right-img2 {
+    position: absolute;
+    right: 27px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.part3 .table-box {
+    position: relative;
+    display: inline-block;
+}
+
+.part3 table {
+    text-align: center;
+    border: 1px solid #d6d6d6;
+}
+
+.part3 table tr {
+    height: 40px;
+    border-top: 1px solid #d6d6d6;
+}
+
+.part3 table .head {
+    height: 37px;
+    background: linear-gradient( 0deg, rgba(245, 247, 249, 1), rgba(255, 255, 255, 1));
+}
+
+.part3 table td input {
+    width: 108px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #d6d6d6;
+    padding-left: 6px;
+    box-sizing: content-box;
+}
+
+.part3 table td {
+    border-right: 1px solid #d6d6d6;
+    width: 132px;
+    outline: none;
+}
+
+.part3 table .left1 {
+    width: 104px;
+}
+
+.part3 table .last {
+    border-right: none;
+}
+
+.part3 .table-box .r-add {
+    background: url("../../images/crf-images/images/tkbj-add.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 9px;
+    right: -28px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.part3 .table-box .b-add {
+    background: url("../../images/crf-images/images/tkbj-add.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 5px;
+    bottom: -28px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.part3 {
+    padding-bottom: 35px;
+}
+
+.part3 table .content_editable {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: block;
+}
+
+.part3 table .content_editable.editable_focus {
+    background: none;
+}
+
+.part3 table .content_editable .q_title {
+    height: 35px;
+    line-height: 35px;
+    padding: 0;
+}
+
+.part3 table .content_editable:hover .right-icon {
+    display: block;
+}
+
+.part3 .right-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 8px;
+    top: 11px;
+    display: none;
+    cursor: pointer;
+}
+
+.part3 .editable_focus .right-icon {
+    display: block;
+}
+
+.part4 .c-box .word {
+    color: #000;
+    font-size: 14px;
+    padding-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    width: 353px;
+}
+
+.part4 .c-box input {
+    width: 353px;
+    height: 30px;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    padding-left: 6px;
+    box-sizing: content-box;
+}
+
+.question-bank .container .right .btn-box {
+    text-align: center;
+    margin-top: 19px;
+}
+
+.question-bank .container .right .tip {
+    width: 100%;
+    text-align: center;
+    margin-top: 28px;
+    color: #666;
+    font-size: 14px;
+}
+
+.question-bank .container .right .btn {
+    display: inline-block;
+    width: 114px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background: url("../../images/crf-images/images/bdmb-03.png") no-repeat;
+    background-size: 100% 100%;
+    margin-right: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}

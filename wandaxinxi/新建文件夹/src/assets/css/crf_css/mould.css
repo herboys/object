@@ -1,0 +1,298 @@
+html {
+    background: #f9f9f9;
+}
+.main {
+
+    min-width: 1200px;
+}
+.main .main-hearder {
+    height: 130px;
+    text-align: center;
+}
+.main .main-hearder div {
+    height: 129px;
+    width: 149px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.main .main-hearder .icon-bg{
+    background:url("../../images/crf-images/icon-bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.main .main-hearder div img{
+    margin-top: 30px;
+}
+.main .main-hearder div .icon-1{
+    display: none;
+}
+.main .main-hearder .icon-bg .icon-1{
+    display: inline-block;
+}
+.main .main-hearder .icon-bg .icon-2{
+    display: none;
+}
+.main .main-hearder div span{
+    display: block;
+    font-size:16px;
+    color: #777777;
+}
+.main .main-hearder .icon-bg span{
+    color: black;
+}
+.main .main-footer {
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    background: white;
+    padding: 27px 31px 15px 31px;
+}
+.main .main-footer .footer-con-1{
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+.main .main-footer .footer-con-1 .con-1-1{
+    width: 33.33%;
+    float: left;
+    height: 240px;
+    position: relative;
+}
+.main .main-footer .footer-con-1 .con-1-1 div{
+    margin-left: 15px;
+    margin-right:15px;
+    border: 1px solid #2875CA;
+    border-top: 5px solid #2875CA;
+    border-radius: 4px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.main .main-footer .footer-con-1 .con-1-1 div .con-sty-1{
+    border-left: 3px solid #00A178;
+    height: 20px;
+    line-height: 20px;
+    margin: 19px 20px 14px 10px;
+}
+.main .main-footer .footer-con-1 .con-1-1 div .con-sty-1 label{
+    font-size:16px;
+    margin-left: 7px;
+}
+.main .main-footer .footer-con-1 .con-1-1 div .con-sty-1 span{
+    color: #999999;
+    float: right;
+}
+.main .main-footer .footer-con-1 .con-1-1 div .con-sty-2{
+    border-top:1px solid #DDDDDD;
+    margin: 0 20px 30px 20px;
+    line-height: 27px;
+    color: #666666;
+    padding-top: 14px;
+}
+.main .main-footer .footer-con-1 .con-1-1 div .con-sty-3{
+    text-align: right;
+    background: #E4EEF9;
+    height: 42px;
+    line-height: 42px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #9BAABD;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.main .main-footer .footer-con-1 .con-1-1 div .con-sty-3 a{
+    text-decoration: none;
+}
+.main .main-footer .footer-con-1 .con-1-1 div .con-sty-3 span{
+    cursor: pointer;
+    padding-right: 20px;
+}
+.main .main-footer .footer-con-1 .con-1-1 div .con-sty-3 span img{
+    width: 17px;
+    height: 17px;
+    vertical-align: -2px;
+}
+.main .main-footer .footer-con-1 .con-1-1 div .con-sty-3 span label{
+    margin-left: 7px;
+    color: black;
+    cursor: pointer;
+}
+.main .main-footer .footer-con .footer-btn{
+    text-align: right;
+    margin-bottom: 13px;
+}
+.main .main-footer .footer-con .footer-btn button{
+    width: 86px;
+    height:26px;
+    border: 1px solid #278F58;
+    background: white;
+    color: #278F58;
+    border-radius: 4px;
+}
+.main .main-footer .footer-con .footer-btn button label{
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 2px;
+    vertical-align: 3px;
+}
+.main .main-footer .footer-con .footer-btn button span{
+    margin-left: 3px;
+    vertical-align: 5px;
+}
+@media (min-width:1024px) and (max-width:1680px){
+    .main {
+        padding: 0 37px 53px 25px;
+        min-width: 1200px;
+    }
+}
+.main .main-footer .form-con{
+    padding: 24px 44px 0 44px;
+}
+.main .main-footer .form-con .form-cloud{
+    height: 430px;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding-bottom: 15px;
+}
+.main .main-footer .form-con .form-cloud div{
+    width: 50%;
+    float: left;
+}
+.main .main-footer .form-con .form-cloud div ul{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.main .main-footer .form-con .form-cloud div ul li{
+    height: 64px;
+    line-height: 64px;
+    border-bottom: 1px dashed #D8D8D8;
+    position: relative;
+    margin-bottom: 25px;
+    transition: .5s;
+}
+.main .main-footer .form-con .form-cloud div ul li:hover{
+    background: #DDF1FF;
+}
+.main .main-footer .form-con .form-cloud div ul li .form-det1{
+    margin-left:20px;
+}
+.main .main-footer .form-con .form-cloud div ul li .form-det1,.form-det2{
+    width: 50%;
+}
+.main .main-footer .form-con .form-cloud div ul li .form-det1 i{
+    width: 3px;
+    height: 20px;
+    background: #00A178;
+    vertical-align: -3px;
+}
+.main .main-footer .form-con .form-cloud div ul li .form-det1 label{
+    font-size: 16px;
+    margin-left: 12px;
+}
+.main .main-footer .form-con .form-cloud div ul li .form-det2{
+    margin-right:30px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+.main .main-footer .form-con .form-cloud div ul li .form-det2 i{
+    width: 1px;
+    height: 26px;
+    background: #9BAABD;
+    position: absolute;
+    left: 0;
+    top: 19px;
+}
+.main .main-footer .form-con .form-cloud div ul li .form-det2 img{
+    width:18px;
+    height: 18px;
+    vertical-align: -2px;
+}
+.main .main-footer .form-con .form-cloud div ul li .form-det2 a{
+    text-decoration: none;
+    color: black;
+    margin-right: 42px;
+}
+.main .main-footer .form-con .form-cloud div ul li .form-det2 a label{
+    margin-left: 8px;
+    cursor: pointer;
+}
+.main .main-footer .form-con .form-cloud div ul li .form-det2 span label{
+    margin-left: 6px;
+}
+.main .main-footer .crf-con .footer-con-1 .con-1-1 div .con-sty-3 span{
+    padding: 0;
+    float: left;
+    width: 33.33%;
+    height: 22px;
+    text-align: center;
+    position: relative;
+}
+.main .main-footer .crf-con .footer-con-1 .con-1-1 div .con-sty-3 span i{
+    width: 1.5px;
+    height: 22px;
+    background: #9BAABD;
+    position: absolute;
+    right:2px;
+    top:10px;
+}
+@media (min-width:1024px) and (max-width:1680px){
+    .main .main-footer .crf-con .footer-con-1 .con-1-1 div .con-sty-3 span i{
+        width: 1px;
+        height: 22px;
+        background: #9BAABD;
+        position: absolute;
+        right:2px;
+        top:10px;
+    }
+}
+.main .main-footer .crf-con .footer-con-1 .con-1-1 div .con-sty-3 span .img1{
+    width: 22px;
+    height: 18px;
+}
+.main .main-footer .crf-con .footer-con-1 .con-1-1 div .con-sty-3 span .img2{
+    width: 13px;
+    height: 12px;
+    margin-left: 7px;
+}
+.main .main-footer .crf-con .footer-con-1 .con-1-1 .con-sty-4{
+    display: none;
+    width: 33%;
+    height: 185px;
+    position: absolute;
+    right: 15px;
+    background: white;
+    z-index: 66;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+    padding-bottom: 5px;
+    padding-top: 13px;
+    margin: 0;
+}
+.main .main-footer .crf-con .footer-con-1 .con-1-1 .con-sty-change{
+    display: block;
+}
+.main .main-footer .crf-con .footer-con-1 .con-1-1 .con-sty-4 ul li{
+    padding-left: 14px;
+    cursor: pointer;
+    color: #278F58;
+    height: 30px;
+    line-height: 30px;
+}
+.main .main-footer .crf-con .footer-con-1 .con-1-1 .con-sty-4 ul li img{
+    width: 18px;
+    height: 17px;
+    vertical-align: -2px;
+}
+.main .main-footer .crf-con .footer-con-1 .con-1-1 .con-sty-4 ul li label{
+    margin-left: 3px;
+    cursor: pointer;
+}
+.main .main-footer .crf-con .footer-con-1 .con-1-1 .con-sty-4 .sty-4-change{
+    background: #4A95E6;
+    color:white;
+}

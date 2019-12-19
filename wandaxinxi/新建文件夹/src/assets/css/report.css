@@ -1,0 +1,496 @@
+html {
+    background: #F5F5F5;
+}
+
+body {
+    overflow: hidden;
+}
+
+.content {
+    padding: 12px 30px 30px 30px;
+}
+
+.content .con-header {
+    margin-left: 40px;
+}
+
+.content .con-header span {
+    font-size: 18px;
+    height: 30px;
+    width: 168px;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.content .con-header .con-header-bg1 {
+    background: url("../images/report-bg1.png") no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    z-index: 6;
+}
+
+.content .con-header .con-header-bg2 {
+    background: url("../images/report-bg2.png") no-repeat;
+    background-size: 100% 100%;
+    color: #1670EB;
+}
+
+.content .con-text {
+    background: white;
+    display: block;
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+}
+
+.content .con-text .text-info .info-top {
+    margin: 26px 0 23px 27px;
+}
+
+.content .con-text .text-info .info-top img {
+    width: 22px;
+    height: 22px;
+}
+
+.content .con-text .text-info .info-top label {
+    font-size: 18px;
+    color: #00A178;
+    vertical-align: 3px;
+}
+
+.info-bottom {
+    padding: 0 75px 0 59px;
+    height: 107px;
+    border-top: 2px solid #00A178;
+    background: url("../images/report-bg3.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.info-bottom .info-btm1 {
+    margin-top: 22px;
+}
+
+.info-bottom .info-btm2 {
+    margin-top: 10px;
+}
+
+.info-bottom .info-btm2 span {
+    width: 20%;
+}
+
+.info-bottom div span {
+    width: 18.7%;
+}
+
+.info-bottom div span label {
+    font-size: 16px;
+    color: #00A178;
+}
+
+.info-bottom div span i {
+    font-size: 16px;
+}
+
+.content .con-text .text-det {
+    padding: 25px 9px 30px 61px;
+}
+
+.content .con-text .text-det #scroll {
+    position: relative !important;
+    /* height: 500px; */
+    overflow-y: hidden !important;
+}
+
+.content .con-text .text-det #scroll .text-cloud {
+    margin-right: 42px;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same {
+    margin-top: 39px;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same p img {
+    width: 16px;
+    height: 16px;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same p span {
+    font-size: 16px;
+    margin-left: 5px;
+    vertical-align: 2px;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same table {
+    margin-top: 17px;
+    width: 100%;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same table tr th,
+td {
+    text-align: center;
+    padding: 12px 0 12px 0;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same table tr th {
+    background: #FAFBFC;
+    color: #3D556F;
+}
+
+.content .con-text .text-det #scroll .text-cloud .med-info {
+    margin-top: 0;
+}
+
+.content .con-text .text-det #scroll .text-cloud .med-info table tr {
+    border-bottom: 1px solid #D6D9E3;
+}
+
+.content .con-text .text-det #scroll .text-cloud .med-info table {
+    border: 1px solid #C9CCD6;
+}
+
+.content .con-text .text-det #scroll .text-cloud .med-info table tr td {
+    color: #1670EB;
+}
+
+.content .con-text .text-det #scroll .text-cloud .cli-exam1 table tr th {
+    border: 1px solid #C9CCD6;
+}
+
+.content .con-text .text-det #scroll .text-cloud .cli-exam1 table tr td {
+    padding: 8px 0 8px 0;
+    border: 1px solid #C9CCD6;
+    width: 20%;
+}
+
+.content .con-text .text-det #scroll .text-cloud .cli-exam2 table tr th {
+    border: 1px solid #D6D9E3;
+}
+
+.content .con-text .text-det #scroll .text-cloud .cli-exam2 table tr td {
+    border: 1px solid #D6D9E3;
+    width: 14.29%;
+}
+
+.content .con-text .text-det #scroll .text-cloud .cli-exam2 table {
+    border: 1px solid #C9CCD6;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same .oper-cloud {
+    padding: 5px 33px 5px 20px;
+    background: #F7F7F7;
+    margin-top: 15px;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same .oper-cloud .oper-cloud1 span {
+    margin-left: 132px;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same .oper-cloud .oper-cloud1 .oper-sp1 {
+    margin-left: 0;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same .oper-cloud div {
+    line-height: 28px;
+}
+
+.content .con-text .text-det #scroll .text-cloud .text-same .oper-cloud div span label {
+    color: #00A178;
+}
+
+.content .con-text .text-det #scroll .text-cloud .dis-abs .oper-cloud div span {
+    display: block;
+}
+
+.content .con-lab {
+    display: none;
+}
+
+.content .con-lab .lab-center {
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    background: white;
+}
+
+.lab-header {
+    height: 70px;
+    line-height: 70px;
+    padding-left: 29px;
+    border-bottom: 2px solid #00A178;
+}
+
+.lab-header img {
+    width: 20px;
+    height: 20px;
+    vertical-align: -2px;
+}
+
+.lab-header label {
+    font-size: 18px;
+    color: #00A178;
+    margin-left: 5px;
+}
+
+.lab-header span {
+    font-size: 18px;
+    color: #00A178;
+}
+
+.content .con-lab .lab-center .lab-con {
+    margin: 20px 60px 0 60px;
+    height: 500px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left {
+    width: 285px;
+    height: 459px;
+    border: 1px solid #C9CCD6;
+    float: left;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per {
+    height: 92px;
+    background: white;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per div {
+    float: left;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per .lab-per1 {
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per .lab-per1 img {
+    width: 40px;
+    height: 40px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per .lab-per2 {
+    margin-top: 21px;
+    margin-left: 5px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per .lab-per2 label {
+    font-size: 22px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per .lab-per2 p {
+    margin-top: 5px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per .lab-per2 p span {
+    width: 30px;
+    height: 16px;
+    padding-right: 5px;
+    border-right: 1px solid #C9CCD6;
+    position: relative;
+    line-height: 16px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per .lab-per2 p span img {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per .lab-per2 p span .img1 {
+    display: block;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per .lab-per2 p span .img2 {
+    display: none;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per .lab-per2 p span i {
+    margin-left: 1px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per-det {
+    height: 367px;
+    background: #F7F7F7;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per-det ul {
+    padding: 20px 0 0 30px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per-det ul li {
+    margin-bottom: 21px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per-det ul li label {
+    font-size: 16px;
+    color: #00A178;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-left .lab-per-det ul li span {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right {
+    margin-left: 307px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right #scoll {
+    position: relative !important;
+    height: 462px;
+    overflow-y: hidden !important;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right #viewTable {
+    height: 459px;
+    min-width: 700px;
+    width: 99.9%;
+    position: relative;
+    border-bottom: 1px solid #D6D9E3;
+}
+
+.fixed-header-table {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right .view table {
+    width: 100%;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right .view table tr th,
+td {
+    text-align: center;
+    border: 1px solid #D6D9E3;
+    color: #3D556F;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right .view table tr th {
+    background: #F7F9FA;
+    padding: 12px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right .view table tr td img {
+    width: 14px;
+    height: 14px;
+    margin-left: 15px;
+    vertical-align: -2px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right .view table tr:nth-child(even) {
+    background: #F1F7FF;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right p span label,
+i {
+    font-size: 12px;
+    color: #999999;
+}
+
+.content .con-lab .lab-center .lab-con .lab-con-right p span {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.lab-bottom {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.lab-bottom a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #529AFB;
+}
+
+.lab-bottom a img {
+    width: 12px;
+    height: 13px;
+    vertical-align: -1px;
+    margin-left: 3px;
+}
+
+.content .con-img {
+    display: none;
+}
+
+.content .con-img .img-cloud {
+    border: 1px solid #D8D8D8;
+    border-radius: 8px;
+    background: white;
+}
+
+.content .con-img .img-cloud .img-table {
+    padding: 20px 60px;
+}
+
+.content .con-img .img-cloud .img-table #scroll-img {
+    position: relative !important;
+    height: 366px;
+    overflow-y: hidden !important;
+}
+
+.content .con-img .img-cloud .img-table #view-table {
+    height: 364px;
+    border-bottom: 1px solid #C9CCD6;
+    position: relative;
+}
+
+.content .con-img .img-cloud .img-table #view-table table {
+    height: 100%;
+}
+
+.content .con-img .img-cloud .img-table #view-table table tr th,
+td {
+    border: 1px solid #D6D9E3;
+    text-align: center;
+}
+
+.content .con-img .img-cloud .img-table #view-table table tr th {
+    background: #F8F9FA;
+    color: #3D556F;
+    padding: 11px 0 11px 0;
+}
+
+.content .con-img .img-cloud .img-table #view-table table tr td {
+    color: #1670EB;
+    font-size: 13px;
+    vertical-align: top;
+    padding: 12px 23px 0 23px;
+}
+
+.content .con-img .img-cloud .img-table #view-table table tr .list-dif {
+    width: 43%;
+}
+
+.content .con-img .img-cloud .img-table p {
+    margin-top: 5px;
+}
+
+.content .con-img .img-cloud .img-table p span {
+    margin-right: 80px;
+}
+
+.content .con-img .img-cloud .img-table p span label,
+i {
+    color: #999999;
+    font-size: 12px;
+}
+
+.content .con-img .img-cloud .info-bottom {
+    margin-top: -22px;
+    border-top: 0;
+}
+
+.content .con-img .img-cloud .info-bottom .info-btm1 {
+    padding-top: 22px;
+}
