@@ -51,7 +51,7 @@
                   </div>
                 </div>
                 <v-draggable v-model="resultList" @update="dragEnd">
-                  <div v-for="(item,index) in resultList" :key="index" class="deleteclass">
+                  <div v-for="(item,index) in resultList" :key="index" class="deleteclass" @click="ClickSelect(index)" >
 
                     <div class="ymicon">
                       <span class="ymindex">{{index+1}}</span>
@@ -70,7 +70,7 @@
                         data-tippy-content="删除题目"
                       />
                     </div>
-                    <component ref="coma" :is="item.componentName" :pushitem="item"></component>
+                    <component ref="coma" :is="item.componentName" :pushitem="item" :style="ClickSelectIndex==index?'border:3px solid red ':''"></component>
                   </div>
                 </v-draggable>
                 <div>
@@ -109,6 +109,7 @@ export default {
   },
   data() {
     return {
+      ClickSelectIndex:'',
       initial: "Initial Value",
       form_name: "我是大标题",
       ViceTitle: "我是副标题",
@@ -167,6 +168,10 @@ export default {
   },
   methods: {
     ...mapMutations(["TEMPALTETYPES", "CTFTEMPLATECHILDFROM"]),
+    ClickSelect(index){
+      this.ClickSelectIndex=index
+
+    },
     fistchildlist() {
       this.form_name = this.ismainlist.formName;
       this.fromid = this.ismainlist.id;
